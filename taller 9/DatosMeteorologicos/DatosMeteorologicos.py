@@ -95,8 +95,3 @@ class DatosMeteorologicos:
         abreviacion = min(grados_a_abreviacion, key=lambda x: abs(x - grados))
         
         return grados_a_abreviacion[abreviacion]
-
-# Uso de la clase
-datos_meteorologicos = DatosMeteorologicos('datos.txt')
-resultados = datos_meteorologicos.procesar_datos()
-print(resultados)
